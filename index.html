@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script src="src/easeljs/events/EventDispatcher.js"></script>
+    <script src="src/preloadjs/AbstractLoader.js"></script>
+    <script src="src/preloadjs/LoadQueue.js"></script>
+    <script src="src/preloadjs/TagLoader.js"></script>
+    <script src="src/preloadjs/XHRLoader.js"></script>
+    <script src="jquery.js"></script>
+    <script src="kineticjs.js"></script>
+
+    <!-- YOUR LIBRARIES AND CSS HERE -->
+ <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color:black;
+      }
+    </style>
+   
+</head>
+<body>
+	
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41788721-1', 'festember.com');
+  ga('send', 'pageview');
+
+</script>
+    <div id="loadingOverlay" style="z-index:1000; color:white; position:absolute; margin:0px; width:100%; height:100%; background-color: black; display:none">
+        <center><h2 id="loader"> Loading... </h2><center>
+    </div>
+    
+    <!-- YOUR HTML CODE STARTS HERE-->
+
+
+<center>
+ <div id="container"></div>
+        
+<audio id="background_audio" autoplay="autoplay" loop>
+  <source src="sound.mp3" type="audio/mpeg" />
+</audio> 
+
+</center>
+    <!-- YOUR HTML CODE ENDS HERE-->
+
+
+
+    <script src="preloader.js" ></script>
+</body>
+
+
+</html>
